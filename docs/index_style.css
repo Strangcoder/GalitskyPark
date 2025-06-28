@@ -1,0 +1,342 @@
+body {
+	background: url("image/park_background.jpg") no-repeat fixed;
+	background-size: cover;
+}
+@font-face {
+    font-family: 'Veranda'; /* Имя, которое вы будете использовать для шрифта */
+    src: url('font/VerdanaPrimer.ttf') format('truetype'); /* Укажите путь к файлу шрифта */
+    font-weight: lighter; /* Установите вес для шрифта */
+    font-style: normal; /* Установите стиль для шрифта */
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+.parent{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	gap: 50px;
+}
+.title {
+  width: 100%;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(13, 163, 28, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.txt_main{
+	font-family: 'Veranda';
+	font-size: 20px;
+	color: black;
+	margin-bottom: 7px;
+}
+.pole_button {
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.pole_button1 {
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+}
+.txt_title{
+	font-family: 'Veranda';
+	font-size: 16px;
+	color: black;
+}
+.txt_title1{
+	font-family: 'Veranda';
+	font-size: 17px;
+	color: black;
+	margin-bottom: 8px;
+}
+.map_body{
+
+	width: 55%;
+	height: 500px;
+	border: 0px solid;
+	display: grid;
+	grid-template-rows: 10% 90%;
+	grid-template-columns: 100%;
+	gap: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+
+
+}
+.box_map_txt{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.map {
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	border-radius: 10px;
+}
+
+.leaflet-container {
+	width: 100%;
+	height: 100%;
+}
+.body_main{
+	margin-top: 200px;
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 10px;
+	background: rgba(227, 186, 82, 0.7);
+
+
+}
+.pppp{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+}
+.location_box{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box_title{
+  width: 100%;
+  height: 66px;
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.box_title2{
+	width: 100%;
+	height: 60px;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-items: center;
+}
+.locl{
+	width: 55%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+/*  border: 1px solid;*/
+  border-radius: 10px;
+/*  background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-bottom: 1px solid white;
+}
+
+.slide p {
+	font-family: 'Veranda';
+  margin: 5px 0;
+  color: black;
+  font-size: 13px;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.path{
+	width: 100%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 11px;
+}
+.box_path{
+	width: 55%;
+	height: 100%;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-top: 16px;
+
+}
+.leaflet-tooltip.always-visible-tooltip {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    box-shadow: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Veranda';
+    font-size: 10px;          /* ← уменьшен шрифт */
+    padding: 2px 4px;
+}
+
+.block_img{
+	width: 50px;
+  height: 50px;
+  border: 0px solid;
+  margin-top: 5px;
+}
+.slider-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-dots .dot.active {
+  background-color: #333;
+}
+
+.footer{
+	width: 100%;
+	height: auto;
+	border: 0px solid;
+	background: rgba(13, 163, 28, 0.7);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 10px;
+}
+.logo{
+	width: auto;
+	height: auto;
+	border: 0px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+.mesto{
+	width: auto;
+	height: auto;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+.butt1{
+	width: auto;
+	height: auto;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width:500px){
+	.map_body{
+		width: 90%;
+	}
+	.locl{
+		width: 90%;
+	}
+	.box_path{
+		width: 90%;
+	}
+	.footer{
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+}
