@@ -1,0 +1,277 @@
+body {
+	background: url("../image/park_background.jpg") no-repeat fixed;
+	background-size: cover;
+}
+@font-face {
+    font-family: 'Veranda'; /* Имя, которое вы будете использовать для шрифта */
+    src: url('../font/VerdanaPrimer.ttf') format('truetype'); /* Укажите путь к файлу шрифта */
+    font-weight: lighter; /* Установите вес для шрифта */
+    font-style: normal; /* Установите стиль для шрифта */
+}
+a {
+  all: unset;
+  cursor: pointer;
+}
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.main_body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 100px;
+}
+
+
+
+.slider {
+  width: 450px;
+  height: 350px;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000; /* опционально — для видимости границ */
+}
+.txt_main{
+	font-family: 'Veranda';
+	font-size: 20px;
+	color: black;
+}
+.blocktxt {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title{
+	width: 100%;
+	height: auto;
+	border: 0px solid;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+  border-radius: 10px;
+	background: rgba(13, 163, 28, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.block_location1 {
+  margin: 200px auto 0 auto; /* top right bottom left */
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  background: rgba(227, 186, 82, 0.7);
+}
+.box_title{
+  width: 100%;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 10px;
+}
+.block_img{
+  width: 50px;
+  height: 50px;
+  border: 0px solid;
+  margin-top: 5px;
+}
+.pole_button{
+	width: auto;
+	height: auto;
+	border: 0px solid;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+}
+.pole_button1{
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap:30px;
+}
+.txt_title{
+  font-family: 'Veranda';
+  font-size: 16px;
+  color: black;
+}
+.swiper-pagination-bullet {
+  background-color: gray;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: black;
+  opacity: 1;
+}
+/*@media screen and (max-width: 768px) {
+  .block_location1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block_location1 .slider {
+    order: 1;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .block_location1 .blocktxt {
+    order: 2;
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .block_location1 .blocktxt p {
+    text-align: center !important;
+  }
+  .swiper-slide img {
+	  max-width: 100%;
+	  height: auto;
+	  display: block;
+	}
+	  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 24px;
+  }
+}*/
+@media screen and (max-width: 768px) {
+  .block_location1 {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .block_location1 .slider,
+  .block_location1 .blocktxt {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .block_location1 .blocktxt p {
+    text-align: center !important;
+  }
+
+  .swiper-slide img {
+    object-fit: contain;
+  }
+
+  .block_location1 .slider {
+    order: 1;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .block_location1 .blocktxt {
+    order: 2;
+    width: 100%;
+    max-width: 90%;
+    text-align: center;
+  }
+	  .slider {
+	  width: 100%;
+	  max-width: 450px;
+	  aspect-ratio: 4 / 3;
+	  overflow: hidden;
+	  position: relative;
+	  background: #000;
+	  margin-top: 20px;
+	}
+
+	.swiper-slide img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  display: block;
+	}
+	  .swiper-button-prev,
+  .swiper-button-next {
+    --swiper-navigation-size: 24px;
+  }
+}
+.footer{
+  width: 100%;
+  height: auto;
+  border: 0px solid;
+  background: rgba(13, 163, 28, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.logo{
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.mesto{
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.butt1{
+  width: auto;
+  height: auto;
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.txt_title1{
+  font-family: 'Veranda';
+  font-size: 17px;
+  color: black;
+  margin-bottom: 8px;
+}
+
+@media (max-width:500px){
+  .footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
